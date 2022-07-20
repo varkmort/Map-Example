@@ -30,9 +30,28 @@ void FindByVector(std::vector<NameRecord>& db, std::vector<std::string> &names)
 	}
 }
 
+std::vector<std::string> OneOwner(std::map<std::string, NameRecord*> &searchTable, std::vector<std::string> &names) {
+	
+
+	std::vector<std::string> result;
+	
+
+	for (auto &name : names) {
+
+		if (!searchTable.contains(name)) {
+			result.emplace_back(name);
+			return result;
+		}
+		else if (searchTable.at(name)->count == 1) {
+			return;
+		}
+	}
+
+};
 
 int main()
 {
+	system("chcp 65001");
 	std::vector<NameRecord> db = GetNames();
 	std::vector<std::string> names;
 	std::ifstream in("names.txt");
@@ -51,9 +70,11 @@ int main()
 			std::cout << name << " wasnt found\n";
 		}
 		else {
-			std::cout << searcTable[name]->name << " has " << 
+			std::cout << searcTable[name]->name << " has " <<
 				searcTable[name]->count << " owners\n";
 		}
 	}
+
+
 	return 0;
 }
