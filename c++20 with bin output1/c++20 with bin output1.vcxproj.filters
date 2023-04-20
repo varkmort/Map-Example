@@ -38,5 +38,9 @@
       <Filter>Файлы ресурсов</Filter>
     </Text>
     <Text Include="Admin.txt" />
+    <Text Include="Текст.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+
   </ItemGroup>
 </Project>
