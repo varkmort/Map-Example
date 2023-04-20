@@ -157,6 +157,7 @@
     <ClInclude Include="name.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Admin.txt" />
     <Text Include="names.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -37,5 +37,6 @@
     <Text Include="names.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="Admin.txt" />
   </ItemGroup>
 </Project>
