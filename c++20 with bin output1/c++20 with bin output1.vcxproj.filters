@@ -37,5 +37,8 @@
     <Text Include="names.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="Chernyh_Polina.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
   </ItemGroup>
 </Project>
