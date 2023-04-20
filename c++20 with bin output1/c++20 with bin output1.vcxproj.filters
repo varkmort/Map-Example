@@ -37,5 +37,8 @@
     <Text Include="names.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
+    <Text Include="aboutme.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
 </Project>
